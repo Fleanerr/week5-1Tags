@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Week 4 assignment, login page
+Assignment: UAT Space Program - We have Sound!
+Anika Franklin
+Anifrank@uat.edu or Anikafleaner@gmail.com-->
+<html>
+	<head>
+	<!--connects the javascript code page-->
+		 <script src="loginCode.js"></script>
+	<!--connects the style.css code page-->
+		 <link rel="stylesheet" href="loginStyle.css">
+	<!-- Title of the web page-->
+		<title> UATspace login page </title>
+	</head>
+	<body>
+	<!--big header-->
+		<h1> Welcome to the UATSpace Login Page </h1>
+		Please Log in below<br>
+		<br>
+	<!--login status id-->
+		<div id="loginStatus">Login Status</div><br>
+		<br>
+		<!--credit submit id-->
+		<form id="creditSubmit" onsubmit="return false">
+		<!--first name-->
+			First Name: <input type="text" id="fName"><br>
+		<!--last name-->
+			Last Name: <input type="text" id="lName"><br> 
+		<!--badge number-->
+			Badge Number: <input type="number" id="badgeID"><br>
+			<br>
+		<!--submit button-->
+			<input type="submit" onclick="checkCreds();" class="button">
+		</form>
+	</body>
+</html>

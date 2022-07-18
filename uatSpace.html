@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--Week 1 assignment, html tags
+Assignment: Launching your UAT Space Program HTML Document Tags
+Anika Franklin
+Anifrank@uat.edu or Anikafleaner@gmail.com-->
+<html> 
+
+	<head>
+	<!--connects launchDataDisplay code-->
+	<script src=" launchDataDisplay.js "></script>
+	<!--Data loader-->
+	<script src="dataLoader-1.js"></script>
+	<!--connects javascript code-->
+	<script src="code.js"></script>
+	<!--connects css code-->
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<!--This is the title-->
+		<title>
+			Anika Franklin's UATSpace Page
+		</title>
+		<script>
+			var theTime = new Date();
+			var time_interval = 5000;
+			var last_iteration = 0;
+			var running = true;
+			var index = 0;
+			var timer;
+			var data = getData();
+		</script>
+	</head>
+
+	<body>
+	<!--Table to hold UAT space logo and header text-->
+	<table>
+		<tr>
+		<!--UAT space logo-->
+			<td> <img src="UATspaceLogo-2.jpg"> </td>
+			<td> <h1 id="uatSpace"> UAT Space Program </h1> </td>
+		</tr>
+	</table>
+	
+	<!--data table style-->
+	<table id="data" border="2" width="70%">
+	<!-- changes each column width -->
+		<col style= "width: 35%;">
+		<col style= "width: 35%;">
+		<thead>
+	<!--Data type header -->
+			<th>
+				Data type
+			</th>
+	<!-- Reading header -->
+			<th>
+				Reading
+			</th>
+		</thead>
+	<!-- table body -->
+		<tbody>
+		<!-- time elapsed column -->
+			<tr id= "seconds" ></tr>
+		<!-- latitude column -->
+			<tr id= "latitude" ></tr>
+		<!-- longitude column -->
+				<tr id= "longitude" ></tr>
+		<!-- gps altitude column -->
+				<tr id="gps_altitude"></tr>
+		<!-- bmp sensor altitude column -->
+				<tr id=" bmpSensor_altitude"></tr>
+		<!-- bmp sensor pressure column -->
+				<tr id=" bmpSensor_pressure "></tr>
+		<!-- bmp sensor temperature column -->
+				<tr id=" bmpSensor_temperature "></tr>
+		<!-- digital sensor temperature column -->
+				<tr id=" digitalSensor_temperature "></tr>
+		<!-- css sensor temperature column -->
+				<tr id=" cssSensor_temerature "></tr>
+		<!-- css sensor eco2 column -->
+				<tr id=" cssSensor_eco2 "></tr>
+		<!-- css sensor tvoc column -->
+				<tr id=" cssSensor_tvoc "></tr>
+		<!-- uv column -->
+				<tr id=" uv "></tr>
+		<!-- accel x column -->
+				<tr id=" accelX "></tr>
+		<!-- accel y column -->
+				<tr id=" accelY "></tr>
+		<!-- accel z column-->
+				<tr id=" accelZ "></tr>
+		<!-- magnetic x column-->
+				<tr id=" magneticX "></tr>
+		<!-- magnetic y column -->
+				<tr id=" magneticY "></tr>
+		<!-- magnetic z column -->
+				<tr id=" magneticZ "></tr>
+		<!-- gyro x column -->
+				<tr id=" gyroX "></tr>
+		<!-- gyro y column -->
+				<tr id=" gyroY "></tr>
+		<!-- gyro z column -->
+				<tr id=" gyroZ "></tr>
+		</tbody>
+		
+	</table>
+	<br>
+		<!--Start button-->
+		<button onclick="startFun();" class="button" id = 		"startButton">Start</button>
+		<!--Stop button-->
+		<button onclick="stopFun();" class="button" id = "stopButton">Stop                		</button>
+		<br>
+		<br>
+		The current time is: <div id="clocktime">Press start to display current time</div>
+		<!--
+		For our craps game on the html side, we need: 
+			1. button to play craps
+	   	2. craps status line
+			3. header saying craps played here
+			
+			the story of our craps game......
+	Story begins with 2 astronauts. Astronaut 1 being Billy and 	astronaut 2 being Eddie. They couldnt agree on who should be the one to 	travel into space. Both of them wanted to but neither was willing to 	let the other one go. Running out of time, a collegue Steve suggested 	that they settle it with a game of craps. "Best 2 out 3", steve said  	winner gets to go. Long story short Billy won.
+										The End!
+						*Hope you enjoy my short story :)*
+	    -->
+		<h2 id="craps">Let's Play Craps!</h2>
+		<!--just a title-->
+		<div id="crapsStatus">Craps Status</div><br>
+		<!--play craps button-->
+		<button onclick="playCraps();" class="button">Play Craps</button><br>
+		<br>
+		<!--line breaker-->
+		<br>
+		<!--space sounds-->
+		<h3>Play Sapce Station Sounds</h3>
+		<!--WARNING-->
+		<h4>*Warning it may get loud*</h4>
+		<!--Large button-->
+		<button class="lgbutton" onclick="playStation();">Play Space Station Sounds</button>
+	</body>
+	
+</html>

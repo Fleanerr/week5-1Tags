@@ -1,0 +1,47 @@
+/* changes text to the Papyrus font style*/
+body{
+	color: white;
+	background-image: url('Earth.jpg');
+	font-family: Papyrus; 
+}
+/*changes text color to blue*/
+#uatSpace{
+	color: #90d7ff;
+}
+/*changes text to oblique font style*/
+#countDown{
+	color: #ffb627;
+	font-style: oblique;
+}
+/* changes text color to red*/
+#countdownStatus{
+	color: red;
+/* changes font size */
+	font-size: 3em;
+}
+/* changes text to tan */
+#craps{
+	color: #C7AE8A;
+}
+/* changes button color to blue with a black outline */
+.button{
+/* changes width of button */
+	width: 100px;
+/* changes height of button */
+	height: 30px;
+/* changes background color of button */
+	background-color: #189AB4;
+/* helps make round buttons */
+	border-radius: 15px;
+/* makes button border black */
+	border-color: black;
+}
+
+#data{
+/* changes color to green */
+	color: #59C9A5;
+/* changes font style to bold */
+	font-style: bold;
+/* changes font background color */
+	background-color: #262730;
+}
